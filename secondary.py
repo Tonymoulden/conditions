@@ -1,4 +1,4 @@
-# author:
+# author: Tony Moulden
 # date:
 
 # --------------- # Section 2 # --------------- #
@@ -60,14 +60,26 @@ print()
 # *   *
 # ****
 
+s = input('>> symbol | ')
 
+for i in range(7):
+    if i % 6 == 0:
+        print('*' * 4)
+    else:
+        print(s, ' ', s)
 # &
 # &
 # &
 # &
 # &
 # &&&&&
+s = input('>> symbol | ')
 
+for i in range(6):
+    if i % 6 == 0:
+        print(s * 5)
+    else:
+        print(s)
 
 # @   @
 # @   @

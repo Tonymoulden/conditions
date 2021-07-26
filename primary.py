@@ -1,5 +1,5 @@
-# author:
-# date:
+# author: Tony Moulden
+# date:07/22/21
 
 from random import randint
 
@@ -29,12 +29,17 @@ print('\n' + 'Task 1' + '\n')
 #
 # WRITE CODE BELOW #
 a = float(input('a = '))
-b =
-c =
-d =
+b = float(input('b = '))
+c = float(input('c = '))
+d = float(input('d = '))
 
 print('a == b |', a == b)
-
+print('a == b == c |', a == b == c)
+print('a > b > c |', a > b > c)
+print('a < b < c < d |', a < b < c < d)
+print('a != b == c != d |', a != b == c != d)
+print('a >= b >= c == d |', a >= b >= c == d)
+print('a <= b > c <= d |', a <= b > c <= d)
 # 2 - if Statements (ONLY USE if STATEMENTS)
 print('\n' + 'Task 2' + '\n')
 # Instructions:
@@ -54,12 +59,16 @@ print('\n' + 'Task 2' + '\n')
 #
 # WRITE CODE BELOW #
 word1 = input('enter a word: ')
-word2 =
+word2 = input('enter a word: ')
 
 if word1 == word2:
     print(word1, 'and', word2, 'are the same!')
-
-
+if word1 != word2:
+    print(word1, 'and', word2, 'are not the same!')
+if word1 < word2:
+    print(word1, 'and', word2, 'the first word appears before the second word.')
+if word1 > word2:
+    print(word1, 'and', word2, 'the first word appears after the second word.')
 # 3 - if-elif-else Statements
 print('\n' + 'Task 3' + '\n')
 # Instructions:
@@ -78,7 +87,30 @@ print('\n' + 'Task 3' + '\n')
 #       5. Otherwise, print 'Lose!'
 #
 # WRITE CODE BELOW #
+from random import randint
+
+random_num = randint(1, 6)
+print(random_num)
+
+for i in range():
 
 
 
+for i in range(10, 0, -1):
+    print('you have', i,'guesses only')
+    guess = int(input('enter a guess: '))
+
+    if guess < random_num:
+        print('guess was too low')
+    if guess > random_num:
+        print('guess was too high')
+    if guess == random_num:
+        print('CORRECT! you got it!')
+        break
+
+    print()
+
+if guess != random_num:
+    print('GAME OVER! you lose :(')
+    print(random_num)
 
